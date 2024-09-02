@@ -1,4 +1,4 @@
-<div align="center"> nvim dots </div>
+<h3 align="center">  <em> Nvim Dots </em>  </h3>
 
 ---
 
@@ -6,7 +6,7 @@
 
 ![image](https://github.com/user-attachments/assets/57af0064-cd3d-40f8-b75e-8a3fc63c798f)
 
-**View Gallery**
+### **View Gallery**
 
 <details> <summary> <strong> In Action </strong> </summary>
 
@@ -26,7 +26,7 @@
 
 </details>
 
-#### **Keybinds**
+### **Keybinds**
 
 **Telescope**
 - `<space>ff` - find file
@@ -57,3 +57,12 @@ Copy
 Paste
 - `<space>p` - paste from system clipboard
 - `<space>P` - paste before cursor from system clipboard
+
+---
+
+**Todo**
+- [x] drop current config
+- [x] mention most used keybinds
+- [ ] proper cleanup of config
+- [ ] meaningful files and variables
+- [ ] extend more with time :3
