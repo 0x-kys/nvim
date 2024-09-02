@@ -73,36 +73,6 @@ require("lazy").setup({
 			end,
 		},
 		{
-			'IogaMaster/neocord',
-			event = "VeryLazy",
-			config = function()
-				require("neocord").setup({
-					-- General options
-					logo                = "https://i.pinimg.com/736x/77/64/96/776496f69c11ffc92e4bbc1b9eda56f9.jpg",
-					logo_tooltip        = ":3",
-					main_image          = "logo",
-					client_id           = "1157438221865717891",
-					log_level           = nil,
-					debounce_timeout    = 10,
-					blacklist           = {},
-					file_assets         = {},
-					show_time           = false,
-					global_timer        = false,
-					enable_line_number  = true,
-
-					-- Rich Presence text options
-					editing_text        = "[bonkin'] [%s]",
-					file_explorer_text  = "[starin' at] [%s]",
-					git_commit_text     = "[yeetin' n commitin']",
-					plugin_manager_text = "[handlin' plugins]",
-					reading_text        = "[readin'] [%s]",
-					workspace_text      = "[wspace] [%s]",
-					line_number_text    = "[stuck at] [%s]:[%s]",
-					terminal_text       = "[usin' term]",
-				})
-			end,
-		},
-		{
 			"phaazon/hop.nvim",
 			lazy = true,
 			config = function()
@@ -357,6 +327,15 @@ require("lazy").setup({
 					exclude_groups = {},
 				})
 				require("transparent").clear_prefix("NvimTreeNormal")
+			end,
+		},
+		{
+			'boganworld/crackboard.nvim',
+			dependencies = { 'nvim-lua/plenary.nvim' },
+			config = function()
+				require('crackboard').setup({
+					session_key = '5ad3531a98c2429b084bb080dbc7639c0e2fb68a2664f9db9c936a71bd5b5cc7',
+				})
 			end,
 		},
 	},
