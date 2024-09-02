@@ -334,7 +334,7 @@ require("lazy").setup({
 			dependencies = { 'nvim-lua/plenary.nvim' },
 			config = function()
 				require('crackboard').setup({
-					session_key = '5ad3531a98c2429b084bb080dbc7639c0e2fb68a2664f9db9c936a71bd5b5cc7',
+					session_key = 'boomer-key-here',
 				})
 			end,
 		},
